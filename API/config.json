@@ -1,0 +1,11 @@
+{
+    "service": {
+        "port": 10001
+    },
+    "db": {
+        "host": "hansaflastercluster.iqmxq.mongodb.net",
+        "username": "ShevaRossonero",
+        "password": "sheva123",
+        "dbname": "Movies"
+    },
+}
