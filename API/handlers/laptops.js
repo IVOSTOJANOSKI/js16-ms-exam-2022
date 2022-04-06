@@ -39,3 +39,22 @@ const updatePartial = async (req, res) =>{
         return res.status(500).send('Internal Server Error');   
     }
 };
+
+const remove = async (req, res) => {
+    try {
+        await laptopsMongo.removeLaptop(req.params.id);
+        return res.status(204).send("");
+    } catch (error) {
+        console.log(err)
+        return res.status(500).send('Internal Server Error');
+    }
+};
+
+module.exports ={
+    getAll,
+    getOne,
+    create,
+    update,
+    updatePartial,
+    remove
+};
