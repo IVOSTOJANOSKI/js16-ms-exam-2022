@@ -1,5 +1,5 @@
 const laptops = require('../pkg/laptops');
-const laptopsMongo = require('../pkg/laptops/mongo');
+const laptopsMongo = require('../pkg/db');
 
 const getAll = async (req, res) => {
     try {
